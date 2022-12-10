@@ -1,0 +1,146 @@
+  /* style.css */
+body {
+  font-family: Overpass;
+  color: BLACK;
+  font-size: 20PX;
+}
+h1, h2, h3 {
+  font-family: cinzel;
+}
+
+a {
+  color: #1A48E3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  color: #CE2FAE;
+}
+<!-- index.html -->
+
+body {
+  font-family: Overpass;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #404042;
+  font-family: Cinzel;
+}
+
+p {
+  color: #404042;
+  opacity: .7;
+}
+h2 {text-align: center;
+  margin: 0;
+}
+
+.container {
+  width: 800px;
+  padding: 0;
+  margin: 20%;
+}
+/* Cards media queries */
+@media (max-width: 800px) {
+   .cards {
+    grid-template-columns: 1fr;
+  }
+   .card-white {
+    width: auto;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 45px;
+  margin: 0;
+}
+
+.banner p {
+  color: white;
+  font-size: 24px;
+}
+
+
+.button-blue {
+  background-color: #1A48E3;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button-blue:hover {
+  background-color: #0D1EC6;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card-white {
+    box-shadow: rgba(99,99,99,0.2) 0px 2px 8px 0px;;
+    border-radius: 4px;
+    background: white;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 90px 20px;
+  }
+
+
+  .card-white img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card-white h3 {
+    margin-bottom: 0;
+  }
+
+.footer {
+  background: #404042;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: white;
+}
